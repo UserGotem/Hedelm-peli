@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hedelmäpeli</title>
+</head>
+<body>
+    <h1>HEDELMÄPELI</h1>
+    <div class="header">
+        <br>
+        <p>Säännöt: jos haluat rullata peliautomaattia, voit ottaa painon ja maksimin ja vähentää sen painoa peliautomaatissa. Jos rullaat kerran, aloita se "pelaa"-painikkeella, jos olet ottanut lukitsemalla(lukitse), niin ohitat yhden liikkeen.</p>
+    </div>
+    <div class="container">
+        <div class="upper-container">
+            <div class="option">
+                <div class="inline item1">Voitto: </div>
+                <div class="inline item2" id="raha"></div>
+                <div class="inline item3">Panos: </div>
+                <div class="inline item4" id="panos"></div>
+            </div>
+                
+            <div class="voittotaulu">
+                <div>
+                    <table id="voittotaulu1">
+                        <tr>
+                            <td class="taulukko"><img src="images/7.png" width="50" height="50"><img src="images/7.png" width="50" height="50"><img src="images/7.png" width="50" height="50"><img src="images/7.png" width="50" height="50"></td>
+                            <td class="taulukko arvo" id="taulukkoPanos">10</td>
+                            <td><img id="rahaKuva" src="images/coin.png" alt="coin" width="30" height="30"></td>
+                        </tr>
+                        <tr>
+                            <td class="taulukko"><img src="images/diamond.png" width="50" height="50"><img src="images/diamond.png" width="50" height="50"><img src="images/diamond.png" width="50" height="50"><img src="images/diamond.png" width="50" height="50"></td>
+                            <td class="taulukko arvo" id="taulukkoPanos">6</td>
+                            <td><img id="rahaKuva" src="images/coin.png" alt="coin" width="30" height="30"></td>
+                        </tr>
+                        <tr>
+                            <td class="taulukko"><img src="images/bar.png" width="50" height="50"><img src="images/bar.png" width="50" height="50"><img src="images/bar.png" width="50" height="50"><img src="images/bar.png" width="50" height="50"></td>
+                            <td class="taulukko arvo" id="taulukkoPanos">5</td>
+                            <td><img id="rahaKuva" src="images/coin.png" alt="coin" width="30" height="30"></td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <table id="voittotaulu2">
+                        <tr>
+                            <td class="taulukko"><img src="images/clover.png" width="50" height="50"><img src="images/clover.png" width="50" height="50"><img src="images/clover.png" width="50" height="50"><img src="images/clover.png" width="50" height="50"></td>
+                            <td class="taulukko arvo" id="taulukkoPanos">5</td>
+                            <td><img id="rahaKuva" src="images/coin.png" alt="coin" width="30" height="30"></td>
+                        </tr>
+                        <tr>
+                            <td class="taulukko"><img src="images/lemon.png" width="50" height="50"><img src="images/lemon.png" width="50" height="50"><img src="images/lemon.png" width="50" height="50"><img src="images/lemon.png" width="50" height="50"></td>
+                            <td class="taulukko arvo" id="taulukkoPanos">3</td>
+                            <td><img id="rahaKuva" src="images/coin.png" alt="coin" width="30" height="30"></td>
+                        </tr>
+                        <tr>
+                            <td class="taulukko"><img src="images/horsehoe.png" width="50" height="50"><img src="images/horsehoe.png" width="50" height="50"><img src="images/horsehoe.png" width="50" height="50"></td>
+                            <td class="taulukko arvo" id="taulukkoPanos">5</td>
+                            <td><img id="rahaKuva" src="images/coin.png" alt="coin" width="30" height="30"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="slot-container">
+            <div class="ruutu"><img src="images/7.png"></div>
+            <div class="ruutu"><img src="images/7.png"></div>
+            <div class="ruutu"><img src="images/7.png"></div>
+            <div class="ruutu"><img src="images/7.png"></div>
+
+            <button class="lukitse" id="lukitse1" onclick="lukitse(0)">LUKITSE</button>
+            <button class="lukitse" id="lukitse2" onclick="lukitse(1)">LUKITSE</button>
+            <button class="lukitse" id="lukitse3" onclick="lukitse(2)">LUKITSE</button>
+            <button class="lukitse" id="lukitse4" onclick="lukitse(3)">LUKITSE</button>
+    
+        </div>
+            <div class="nappulat">
+                <button id="pelaa" onclick="pelaa()" >PELAA</button>
+                <button id="panosNappi" onclick="panos()">PANOS</button>
+            </div>
+    </div>
+
+    <div id="voittoteksti"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
