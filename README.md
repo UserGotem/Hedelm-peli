@@ -45,7 +45,7 @@ Hedelmäpeli features a variety of bonus features, including free spins, multipl
 
 ## Source Code
 
-[Link to the game's source code on GitHub]
+[[Link to the game's source code on GitHub]](https://github.com/UserGotem/Hedelmapeli)
 
 ## Keywords
 
