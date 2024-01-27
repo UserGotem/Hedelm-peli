@@ -39,6 +39,7 @@ Hedelmäpeli features a variety of bonus features, including free spins, multipl
 3. Watch the reels spin and win a prize if you match three or more of the same symbols in a row.
 
 ## Screenshots
+![screenshot1](https://github.com/UserGotem/Hedelmapeli/assets/123076970/c44c2b66-b0d7-4c4f-8fdd-bff0bc7fe5a0)
 
 
 
